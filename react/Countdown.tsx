@@ -5,15 +5,19 @@ import { useCssHandles } from 'vtex.css-handles'
 import { FormattedMessage } from 'react-intl'
 
 
+
 interface CountdownProps {
   title: string
   targetDate: string
 }
 
-const DEFAULT_TARGET_DATE = (new Date('2020-08-17')).toISOString()
+
+
+
+const DEFAULT_TARGET_DATE = (new Date('2020-08-18')).toISOString()
 
 const CSS_HANDLES = ["container", "countdown", "title"]
-
+//const CSS_HANDLES = ['countdown']
 
 const Countdown: StorefrontFunctionComponent<CountdownProps> = ({
   title,
@@ -63,4 +67,4 @@ Countdown.schema = {
 
 
 
-export default Countdown;
+export default Countdown
